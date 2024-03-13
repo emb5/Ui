@@ -536,10 +536,6 @@ function Library:Create(TitleText)
 						size = (btn.AbsoluteSize.Y * 1.5)
 					end
 					c:TweenSizeAndPosition(UDim2.new(0, size, 0, size), UDim2.new(0.5, (-size / 2), 0.5, (-size / 2)), 'Out', 'Quad', len, true, nil)
-					for i = 1, 10 do
-						c.ImageTransparency = c.ImageTransparency + 0.05
-						wait(len / 12)
-					end
 					c:Destroy()
 				end
 			end)
@@ -787,10 +783,6 @@ function Library:Create(TitleText)
 							size = (btn.AbsoluteSize.Y * 1.5)
 						end
 						c:TweenSizeAndPosition(UDim2.new(0, size, 0, size), UDim2.new(0.5, (-size / 2), 0.5, (-size / 2)), 'Out', 'Quad', len, true, nil)
-						for i = 1, 10 do
-							c.ImageTransparency = c.ImageTransparency + 0.05
-							wait(len / 12)
-						end
 						c:Destroy()
 					else
 						game.TweenService:Create(CheckmarkHolder, TweenInfo.new(0.15, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {
@@ -810,10 +802,6 @@ function Library:Create(TitleText)
 							size = (btn.AbsoluteSize.Y * 1.5)
 						end
 						c:TweenSizeAndPosition(UDim2.new(0, size, 0, size), UDim2.new(0.5, (-size / 2), 0.5, (-size / 2)), 'Out', 'Quad', len, true, nil)
-						for i = 1, 10 do
-							c.ImageTransparency = c.ImageTransparency + 0.05
-							wait(len / 12)
-						end
 						c:Destroy()
 					end
 					toggled = not toggled
