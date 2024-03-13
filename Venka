@@ -5,6 +5,11 @@ UI made by Deity
 ]]
 -- القائمه معدله نوعاً ما + حليت فيها كم مشكله
 --جميع الحقوق فوق 
+    for i,v in pairs(game.CoreGui:GetChildren()) do
+if v.Name == "LibName" then
+        v:Destroy()
+    end
+end
 local Library = {}
 
 local tween = game:GetService("TweenService")
