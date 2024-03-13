@@ -7,7 +7,12 @@ UI made by Deity
 --جميع الحقوق فوق 
 
 local Library = {}
-
+local CoreGui = game:GetService("CoreGui")
+local seccuuu = "LibName"
+    local found = CoreGui:FindFirstChild(seccuuu)
+    if found then
+        found:Destroy()
+end
 local tween = game:GetService("TweenService")
 local tweeninfo = TweenInfo.new
 local tweeninfo2 = TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.InOut)
@@ -84,12 +89,6 @@ function Library:Create(TitleText)
 	TitleText = TitleText or "Untitled"
 
 	local UILibrary = Instance.new("ScreenGui")
-local CoreGui = game:GetService("CoreGui")
-local seccuuu = "LibName"
-    local found = CoreGui:FindFirstChild(seccuuu)
-    if found then
-        found:Destroy()
-    end
 	local Main = Instance.new("Frame")
 	local UICorner = Instance.new("UICorner")
 	local TopBar = Instance.new("Frame")
